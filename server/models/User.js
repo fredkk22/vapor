@@ -6,12 +6,12 @@ const userSchema = new Schema(
       type: Schema.Types.ObjectId,
       default: () => new Types.ObjectId(),
     },
-    first: {
+    firstName: {
       type: String,
       required: true,
       max_length: 50,
     },
-    last: {
+    lastName: {
       type: String,
       required: true,
       max_length: 50,
@@ -21,10 +21,6 @@ const userSchema = new Schema(
       required: true,
       maxlength: 50,
       minlength: 8,
-    },
-    age: {
-      type: Number,
-      required: true
     },
     email: {
       type: String,
