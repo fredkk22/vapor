@@ -1,4 +1,5 @@
 const { Schema, Types } = require('mongoose');
+const orderSchema = require('./Order');
 
 const userSchema = new Schema(
   {
@@ -30,10 +31,7 @@ const userSchema = new Schema(
       type: String,
       required: true
     },
-    createdAt: {
-      type: Date,
-      default: Date.now
-    },
+    orders: [orderSchema]
   },
   {
     toJSON: {
@@ -43,6 +41,6 @@ const userSchema = new Schema(
   }
 );
 
-const User = model('user', userSchema);
+const User = model('User', userSchema);
 
 module.exports = User;
