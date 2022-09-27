@@ -1,4 +1,5 @@
 const { Schema, Types } = require('mongoose');
+const orderSchema = require('./Order');
 
 const userSchema = new Schema(
   {
@@ -6,12 +7,12 @@ const userSchema = new Schema(
       type: Schema.Types.ObjectId,
       default: () => new Types.ObjectId(),
     },
-    first: {
+    firstName: {
       type: String,
       required: true,
       max_length: 50,
     },
-    last: {
+    lastName: {
       type: String,
       required: true,
       max_length: 50,
@@ -22,10 +23,6 @@ const userSchema = new Schema(
       maxlength: 50,
       minlength: 8,
     },
-    age: {
-      type: Number,
-      required: true
-    },
     email: {
       type: String,
       required: true
@@ -34,10 +31,7 @@ const userSchema = new Schema(
       type: String,
       required: true
     },
-    createdAt: {
-      type: Date,
-      default: Date.now
-    },
+    orders: [orderSchema]
   },
   {
     toJSON: {
@@ -47,6 +41,6 @@ const userSchema = new Schema(
   }
 );
 
-const User = model('user', userSchema);
+const User = model('User', userSchema);
 
 module.exports = User;
