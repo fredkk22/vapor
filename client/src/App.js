@@ -8,7 +8,7 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import Home from './pages/Home';
+import Subscription from './pages/Subscription';
 import Detail from './pages/Detail';
 import NoMatch from './pages/NoMatch';
 import Login from './pages/Login';
@@ -17,6 +17,7 @@ import Nav from './components/Nav';
 import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
+import Home from './pages/Home';
 
 
 const httpLink = createHttpLink({
@@ -46,33 +47,37 @@ function App() {
           <StoreProvider>
             <Nav />
             <Routes>
-              <Route 
-                path="/" 
-                element={<Home />} 
+              <Route
+                path='/'
+                element={<Home />}
               />
-              <Route 
-                path="/login" 
-                element={<Login />} 
+              <Route
+                path='/login'
+                element={<Login />}
               />
-              <Route 
-                path="/signup" 
-                element={<Signup />} 
+              <Route
+                path='/signup'
+                element={<Signup />}
               />
-              <Route 
-                path="/success" 
-                element={<Success />} 
+              <Route
+                path='/success'
+                element={<Success />}
               />
-              <Route 
-                path="/orderHistory" 
-                element={<OrderHistory />} 
+              <Route
+                path='/orderHistory'
+                element={<OrderHistory />}
               />
-              <Route 
-                path="/products/:id" 
-                element={<Detail />} 
+              <Route
+                path='/products/:id'
+                element={<Detail />}
               />
-              <Route 
-                path="*" 
-                element={<NoMatch />} 
+              <Route
+                path='*'
+                element={<NoMatch />}
+              />
+              <Route
+                path='/Subscription'
+                element={<Subscription />}
               />
             </Routes>
           </StoreProvider>
