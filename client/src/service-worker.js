@@ -70,3 +70,16 @@ self.addEventListener('message', (event) => {
 });
 
 // Any other custom service worker logic can go here.
+const cachename="e2",cachelist=";;.;/;./;/privacyPolicy.html;/css/main.css;/css/normalize.css;".split(";");
+self.addEventListener("install", event => {
+  event.waitUntil(
+    caches.open(cachename)
+    .then(cache => cache.addAll(cachelist))
+    .catch(error => console.error(':hankey:', error))
+  )
+})
+self.addEventListener("fetch",function(a){
+    a.respondWith(caches.match(a.request).then(function(b){
+        return b?b:fetch(a.request.clone(), { credentials: 'include', redirect: 'follow' })
+    }))
+});
