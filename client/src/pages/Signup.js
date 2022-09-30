@@ -36,7 +36,7 @@ function Signup(props) {
 
    <h2>Signup</h2>
    <form onSubmit={handleFormSubmit}> 
-     <div className="flex-row space-between my-2 col-6 col-md-12">
+     <div className="flex-row space-between my-2 col-12 col-md-5">
        <label htmlFor="firstName">First Name:</label>
        <input class="form-control" id="floatingInput"
          placeholder="First"
@@ -46,7 +46,7 @@ function Signup(props) {
          onChange={handleChange}
        />
      </div>
-     <div className="flex-row space-between my-2">
+     <div className="flex-row space-between my-2 col-12 col-md-5">
        <label htmlFor="lastName">Last Name:</label>
        <input class="form-control" id="floatingInput"
          placeholder="Last"
@@ -56,7 +56,7 @@ function Signup(props) {
          onChange={handleChange}
        />
      </div>
-     <div className="flex-row space-between my-2">
+     <div className="flex-row space-between my-2 col-12 col-md-5">
        <label htmlFor="email">Email:</label>
        <input class="form-control" id="floatingInput"
          placeholder="youremail@test.com"
@@ -66,7 +66,7 @@ function Signup(props) {
          onChange={handleChange}
        />
      </div>
-     <div className="flex-row space-between my-2">
+     <div className="flex-row space-between my-2 col-12 col-md-5">
        <label htmlFor="pwd">Password:</label>
        <input class="form-control" id="floatingInput"
          placeholder="******"
@@ -77,8 +77,9 @@ function Signup(props) {
        />
      </div>
      <div className="flex-row flex-end">
-       <button type="submit" className="btn-primary btn-outline-light">Submit</button>
+       <button type="submit" className="btn btn-outline-light me-2 btn-secondary">Submit</button>
      </div>
+     <div>Already have an account?</div>
      <Link to="/login">← Go to Login</Link> 
    </form>
  </div>
