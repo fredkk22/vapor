@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import ProductList from "../components/ProductList";
 // import CategoryMenu from "../components/CategoryMenu";
 // import Cart from "../components/Cart";
@@ -21,7 +22,9 @@ const Subscription = () => {
                 <li>1 VaporCoin Per Purchase</li>
                 <li>50 GB of Storage</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-primary">Buy Now</button>
+              <Link to='/Checkout'>
+                <button type="button" class="w-100 btn btn-lg btn-primary">Buy Now</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -38,7 +41,9 @@ const Subscription = () => {
                 <li>100 GB of storage</li>
                 <li>Early Access to Select Games</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-primary">Buy Now</button>
+              <Link to='/Checkout'>
+                <button type="button" class="w-100 btn btn-lg btn-primary">Buy Now</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -56,7 +61,9 @@ const Subscription = () => {
                 <li>Early Access to All Games</li>
                 <li>Vapor Elite Pro Member NFT</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-danger">Buy Now</button>
+              <Link to='/Checkout'>
+                <button type="button" class="w-100 btn btn-lg btn-danger">Buy Now</button>
+              </Link>
             </div>
           </div>
         </div>
