@@ -18,6 +18,7 @@ import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
 import Home from './pages/Home';
+import Checkout from './pages/Checkout'
 
 
 const httpLink = createHttpLink({
@@ -78,6 +79,10 @@ function App() {
               <Route
                 path='/Subscription'
                 element={<Subscription />}
+              />
+              <Route
+                path='/Checkout'
+                element={<Checkout />}
               />
             </Routes>
           </StoreProvider>
