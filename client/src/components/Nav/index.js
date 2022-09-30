@@ -50,9 +50,12 @@ function Nav() {
   
       
               <div class="text-end">
-                
+                <Link to="/Login">
                 <button type="button" class="btn btn-outline-light me-2">Login</button>
+                </Link>
+                <Link to="/Signup">
                 <button type="button" class="btn btn-warning">Sign-up</button>
+                </Link>
               </div>
             </div>
           </div>
