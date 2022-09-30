@@ -2,6 +2,8 @@ import React from "react";
 import ProductList from "../components/ProductList";
 import CategoryMenu from "../components/CategoryMenu";
 import Cart from "../components/Cart";
+import { Link } from "react-router-dom";
+
 
 const Home = () => {
   return (
@@ -13,7 +15,9 @@ const Home = () => {
             <h1 class="fw-light">Welcome to Vapor</h1>
             <p class="lead text-light">Vapor is an open client service for purchasing and storing video games. Our Goal is to create a hub of gamers dedicated to their craft and offer exclusive services our competition lacks. Get ready for your journey with Vapor!</p>
             <p>
-              <a href="#" class="btn btn-primary my-2">Subscribe to Vapor</a>
+             <Link to="/Subscription">
+             <div class="btn btn-primary my-2">Subscribe to Vapor</div>
+             </Link>
             </p>
           </div>
         </div>
