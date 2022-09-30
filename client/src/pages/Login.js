@@ -36,11 +36,11 @@ function Login(props) {
         <h1 className="h3 mb-3 fw-normal">Please Log in</h1>
     
         <div className="form-floating">
-          <input type="email" class="form-control" id="email" placeholder="name@example.com" onChange={handleChange}/>
+          <input type="email" className="form-control" name="email" id="email" placeholder="name@example.com" onChange={handleChange}/>
           <label for="email">Email address</label>
         </div>
         <div className="form-floating">
-          <input type="password" class="form-control" id="pwd" placeholder="Password" onChange={handleChange}/>
+          <input type="password" className="form-control" name="Email" id="pwd" placeholder="Password" onChange={handleChange}/>
           <label for="pwd">Password</label>
         </div>
     
@@ -60,39 +60,3 @@ function Login(props) {
 }
 
 export default Login;
-
-{/* <div className="container my-1">
-<Link to='/signup'>← Go to Signup</Link>
-
-<h2>Login</h2>
-<form onSubmit={handleFormSubmit}>
-  <div className="flex-row space-between my-2">
-    <label htmlFor="email">Email address:</label>
-    <input
-      placeholder="youremail@test.com"
-      name="email"
-      type="email"
-      id="email"
-      onChange={handleChange}
-    />
-  </div>
-  <div className="flex-row space-between my-2">
-    <label htmlFor="pwd">Password:</label>
-    <input
-      placeholder="******"
-      name="password"
-      type="password"
-      id="pwd"
-      onChange={handleChange}
-    />
-  </div>
-  {error ? (
-    <div>
-      <p className="error-text">The provided credentials are incorrect</p>
-    </div>
-  ) : null}
-  <div className="flex-row flex-end">
-    <button type="submit">Submit</button>
-  </div>
-</form>
-</div> */}
