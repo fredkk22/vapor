@@ -1,11 +1,12 @@
 # Vapor
 
-
   ## Table of Contents:
   1. [Description](#description) 
   2. [Installation](#installation)
   3. [Usage](#usage)
   4. [Contributors](#contributors)
+   
+   
   ## Description 
 
   Vapor is a video game digital distribution service and storefront by JAFCL. It was launched to provide users a way to purchase online video games as well as provide a membership program to allow members to play games with one another online and offers members cloud storage.
