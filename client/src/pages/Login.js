@@ -31,28 +31,27 @@ function Login(props) {
 
   return (
 
-<div class="form-signin w-50 m-auto">
-      <form>
-        <img class="mb-4" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"/>
-        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+<div className="form-signin w-50 m-auto">
+      <form onSubmit={handleFormSubmit}>
+        <h1 className="h3 mb-3 fw-normal">Please Log in</h1>
     
-        <div class="form-floating">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"/>
-          <label for="floatingInput">Email address</label>
+        <div className="form-floating">
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" onChange={handleChange}/>
+          <label for="email">Email address</label>
         </div>
-        <div class="form-floating">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password"/>
-          <label for="floatingPassword">Password</label>
+        <div className="form-floating">
+          <input type="password" class="form-control" id="pwd" placeholder="Password" onChange={handleChange}/>
+          <label for="pwd">Password</label>
         </div>
     
-        <div class="checkbox mb-3">
+        <div className="checkbox mb-3">
           <label>
             <input type="checkbox" value="remember-me"/> Remember me
           </label>
         </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-        <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
+        <button className="w-100 btn btn-lg btn-primary" type="submit">Log in</button>
       </form>
+      <Link to='/signup'>If you don't have an account, Sign up!</Link>
     </div>
 
     

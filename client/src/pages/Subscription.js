@@ -6,19 +6,22 @@ import React from "react";
 const Subscription = () => {
   return (
     <div className="container">
+      <br></br>
+      <br></br>
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">Vapor</h4>
+              <h4 class="my-0 fw-normal">Vapor+</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">$5<small class="text-muted fw-dark">/mo</small></h1>
+              <h1 class="card-title pricing-card-title">$5<small class="text-muted fw-light">/mo</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
+                <li>Vapor Newsletter Subscription</li>
                 <li>1 VaporCoin Per Purchase</li>
-                <li>20 GB of Storage</li>
+                <li>50 GB of Storage</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Buy Now</button>
             </div>
           </div>
         </div>
@@ -30,10 +33,12 @@ const Subscription = () => {
             <div class="card-body">
               <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
+                <li>Vapor Newsletter Subscription</li>
                 <li>5 VaporCoin Per Purchase</li>
-                <li>50 GB of storage</li>
+                <li>100 GB of storage</li>
+                <li>Early Access to Select Games</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Buy Now</button>
             </div>
           </div>
         </div>
@@ -43,12 +48,15 @@ const Subscription = () => {
               <h4 class="my-0 fw-normal">Vapor Elite Pro</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">$30<small class="text-muted fw-dark">/mo</small></h1>
+              <h1 class="card-title pricing-card-title">$30<small class="text-muted fw-light">/mo</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
+                <li>Vapor Newsletter Subscription</li>
                 <li>15 VaporCoin Per Purchase</li>
-                <li>100 GB of storage</li>
+                <li>150 GB of storage</li>
+                <li>Early Access to All Games</li>
+                <li>Vapor Elite Pro Member NFT</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+              <button type="button" class="w-100 btn btn-lg btn-danger">Buy Now</button>
             </div>
           </div>
         </div>
