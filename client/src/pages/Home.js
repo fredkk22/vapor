@@ -11,7 +11,7 @@ const Home = () => {
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">Welcome to Vapor</h1>
-            <p class="lead text-muted">Vapor is an open client service for purchasing and storing video games. Our Goal is to create a hub of gamers dedicated to their craft and offer exclusive services our competition lacks. Get ready for your journey with Vapor!</p>
+            <p class="lead text-light">Vapor is an open client service for purchasing and storing video games. Our Goal is to create a hub of gamers dedicated to their craft and offer exclusive services our competition lacks. Get ready for your journey with Vapor!</p>
             <p>
               <a href="#" class="btn btn-primary my-2">Subscribe to Vapor</a>
             </p>
