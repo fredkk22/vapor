@@ -90,8 +90,9 @@ const resolvers = {
     }
   },
   Mutation: {
-    addUser: async (parent, args) => {
-      const user = await User.create(args);
+    addUser: async (parent, {firstName, lastName, userName, email, password}) => {
+      console.log({firstName, lastName, userName, email, password});
+      const user = await User.create({firstName, lastName, userName, email, password});
       const token = signToken(user);
 
       return { token, user };
@@ -108,9 +109,9 @@ const resolvers = {
 
       throw new AuthenticationError('Not logged in');
     },
-    updateUser: async (parent, args, context) => {
+    updateUser: async (parent, {firstName, lastName, userName, email, password}, context) => {
       if (context.user) {
-        return await User.findByIdAndUpdate(context.user._id, args, { new: true });
+        return await User.findByIdAndUpdate(context.user._id, {firstName, lastName, userName, email, password}, { new: true });
       }
 
       throw new AuthenticationError('Not logged in');
@@ -123,11 +124,16 @@ const resolvers = {
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
 
+      console.log(email, password);
+
       if (!user) {
         throw new AuthenticationError('Incorrect credentials');
       }
 
       const correctPw = await user.isCorrectPassword(password);
+      console.log(correctPw);
+      console.log(user);
+      console.log(password);
 
       if (!correctPw) {
         throw new AuthenticationError('Incorrect credentials');
