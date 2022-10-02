@@ -39,7 +39,7 @@ function Signup(props) {
    <form onSubmit={handleFormSubmit}> 
      <div className="flex-row space-between my-2 col-12 col-md-5">
        <label htmlFor="firstName">First Name:</label>
-       <input class="form-control" 
+       <input className="form-control" 
          placeholder="First"
          name="firstName"
          type="firstName"
@@ -49,7 +49,7 @@ function Signup(props) {
      </div>
      <div className="flex-row space-between my-2 col-12 col-md-5">
        <label htmlFor="lastName">Last Name:</label>
-       <input class="form-control" 
+       <input className="form-control" 
          placeholder="Last"
          name="lastName"
          type="lastName"
@@ -59,7 +59,7 @@ function Signup(props) {
      </div>
      <div className="flex-row space-between my-2 col-12 col-md-5">
        <label htmlFor="userName">Username:</label>
-       <input class="form-control" 
+       <input className="form-control" 
          placeholder="username"
          name="userName"
          type="userName"
@@ -69,7 +69,7 @@ function Signup(props) {
      </div>
      <div className="flex-row space-between my-2 col-12 col-md-5">
        <label htmlFor="email">Email:</label>
-       <input class="form-control" 
+       <input className="form-control" 
          placeholder="youremail@test.com"
          name="email"
          type="email"
@@ -79,7 +79,7 @@ function Signup(props) {
      </div>
      <div className="flex-row space-between my-2 col-12 col-md-5">
        <label htmlFor="pwd">Password:</label>
-       <input class="form-control" 
+       <input className="form-control" 
          placeholder="******"
          name="password"
          type="password"
