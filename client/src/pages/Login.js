@@ -40,8 +40,8 @@ function Login(props) {
           <label for="email">Email address</label>
         </div>
         <div className="form-floating">
-          <input type="password" className="form-control" name="Email" id="pwd" placeholder="Password" onChange={handleChange}/>
-          <label for="pwd">Password</label>
+          <input type="password" className="form-control" name="password" id="password" placeholder="Password" onChange={handleChange}/>
+          <label for="password">Password</label>
         </div>
     
         <div className="checkbox mb-3">
@@ -49,6 +49,11 @@ function Login(props) {
             <input type="checkbox" value="remember-me"/> Remember me
           </label>
         </div>
+        {error ? (
+          <div>
+            <p className="error-text">The email or password provided are incorrect</p>
+          </div>
+        ) : null}
         <button className="w-100 btn btn-lg btn-primary" type="submit">Log in</button>
       </form>
       <Link to='/signup'>If you don't have an account, Sign up!</Link>
