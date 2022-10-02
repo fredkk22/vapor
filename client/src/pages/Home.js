@@ -40,7 +40,9 @@ const Home = () => {
                   <p className="card-text">PUBG: Battlegrounds</p>
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="btn-group">
-                      <button type="button" className="btn btn-sm btn-outline-primary">Purchase</button>
+                      <Link to='/Checkout'>
+                        <button type="button" className="btn btn-sm btn-outline-primary">Purchase</button>
+                      </Link>
                       <button type="button" className="btn btn-sm btn-outline-success">Save</button>
                     </div>
                   </div>
@@ -55,7 +57,9 @@ const Home = () => {
                   <p className="card-text">LEGO® Star Wars™: The Skywalker Saga</p>
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="btn-group">
-                      <button type="button" className="btn btn-sm btn-outline-primary">Purchase</button>
+                    <Link to='/Checkout'>
+                        <button type="button" className="btn btn-sm btn-outline-primary">Purchase</button>
+                      </Link>
                       <button type="button" className="btn btn-sm btn-outline-success">Save</button>
                     </div>
                   </div>
@@ -70,7 +74,9 @@ const Home = () => {
                   <p className="card-text">Elden Ring</p>
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="btn-group">
-                      <button type="button" className="btn btn-sm btn-outline-primary">Purchase</button>
+                    <Link to='/Checkout'>
+                        <button type="button" className="btn btn-sm btn-outline-primary">Purchase</button>
+                      </Link>
                       <button type="button" className="btn btn-sm btn-outline-success">Save</button>
                     </div>
                   </div>
@@ -85,7 +91,9 @@ const Home = () => {
                   <p className="card-text">Red Dead Redemption 2</p>
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="btn-group">
-                      <button type="button" className="btn btn-sm btn-outline-primary">Purchase</button>
+                    <Link to='/Checkout'>
+                        <button type="button" className="btn btn-sm btn-outline-primary">Purchase</button>
+                      </Link>
                       <button type="button" className="btn btn-sm btn-outline-success">Save</button>
                     </div>
                   </div>
@@ -100,7 +108,9 @@ const Home = () => {
                   <p className="card-text">Destiny 2</p>
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="btn-group">
-                      <button type="button" className="btn btn-sm btn-outline-primary">Purchase</button>
+                    <Link to='/Checkout'>
+                        <button type="button" className="btn btn-sm btn-outline-primary">Purchase</button>
+                      </Link>
                       <button type="button" className="btn btn-sm btn-outline-success">Save</button>
                     </div>
                   </div>
@@ -111,15 +121,17 @@ const Home = () => {
             <div className="col">
               <div className="card shadow-sm">
                 <img src={Portal2} />
-                  <div className="card-body">
-                    <p className="card-text">Portal 2</p>
-                    <div className="d-flex justify-content-between align-items-center">
-                      <div className="btn-group">
+                <div className="card-body">
+                  <p className="card-text">Portal 2</p>
+                  <div className="d-flex justify-content-between align-items-center">
+                    <div className="btn-group">
+                    <Link to='/Checkout'>
                         <button type="button" className="btn btn-sm btn-outline-primary">Purchase</button>
-                        <button type="button" className="btn btn-sm btn-outline-success">Save</button>
-                      </div>
+                      </Link>
+                      <button type="button" className="btn btn-sm btn-outline-success">Save</button>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
 
@@ -130,7 +142,9 @@ const Home = () => {
                   <p className="card-text">Dota 2</p>
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="btn-group">
-                      <button type="button" className="btn btn-sm btn-outline-primary">Purchase</button>
+                    <Link to='/Checkout'>
+                        <button type="button" className="btn btn-sm btn-outline-primary">Purchase</button>
+                      </Link>
                       <button type="button" className="btn btn-sm btn-outline-success">Save</button>
                     </div>
                   </div>
@@ -145,7 +159,9 @@ const Home = () => {
                   <p className="card-text">Hades</p>
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="btn-group">
-                      <button type="button" className="btn btn-sm btn-outline-primary">Purchase</button>
+                    <Link to='/Checkout'>
+                        <button type="button" className="btn btn-sm btn-outline-primary">Purchase</button>
+                      </Link>
                       <button type="button" className="btn btn-sm btn-outline-success">Save</button>
                     </div>
                   </div>
@@ -160,7 +176,9 @@ const Home = () => {
                   <p className="card-text">Apex Legends</p>
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="btn-group">
-                      <button type="button" className="btn btn-sm btn-outline-primary">Purchase</button>
+                    <Link to='/Checkout'>
+                        <button type="button" className="btn btn-sm btn-outline-primary">Purchase</button>
+                      </Link>
                       <button type="button" className="btn btn-sm btn-outline-success">Save</button>
                     </div>
                   </div>
