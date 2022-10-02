@@ -1,0 +1,23 @@
+[
+    {
+        "firstName": "Bob",
+        "lastName": "Flynn",
+        "userName": "bobflynn",
+        "email": "bobflynn@email.com",
+        "password": "bobflynnrocks123"
+    },
+    {
+        "firstName": "Paul",
+        "lastName": "Trout",
+        "userName": "ptrout7",
+        "email": "ptrout7@email.com",
+        "password": "paultroutisamazing7"
+    },
+    {
+        "firstName": "Young",
+        "lastName": "Lee",
+        "userName": "younglee19",
+        "email": "younglee19@email.com",
+        "password": "youngleeiscool19"
+    }
+]
