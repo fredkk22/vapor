@@ -270,6 +270,7 @@ const Checkout = () => {
             </form>
           </div>
         </div>
+       </div>
       </main>
 
       <footer className="my-5 pt-5 text-muted text-center text-small">
