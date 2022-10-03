@@ -5,9 +5,6 @@ import { useState } from "react";
 // import Cart from "../components/Cart";
 
 const Checkout = () => {
-
-  const [input, setInput] = useState("");
-
   return (
     <div className="container">
       <main>
@@ -233,12 +230,6 @@ const Checkout = () => {
         </ul>
       </footer>
     </div>
-
-
-
-
-
-
 
   );
 };
