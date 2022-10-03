@@ -31,9 +31,11 @@ function Nav() {
                 <div className="text-end">
 
                   <Link to="/">
-                    <button type="button" className="btn btn-outline-light me-2"><a href="/" onClick={() => Auth.logout()} className="text-decoration-none text-white">
-                      Logout
-                    </a></button>
+                    <button type="button" className="btn btn-outline-light me-2">
+                      <a href="/" onClick={() => Auth.logout()} className="text-decoration-none text-white">
+                        Logout
+                      </a>
+                    </button>
                   </Link>
                   <Link to="/orderHistory">
                     <button type="button" className="btn btn-warning">Order History</button>
