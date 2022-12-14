@@ -17,20 +17,14 @@ const gameSchema = new Schema({
   price: {
     type: Number,
     required: true,
-    min: 0.99
+    min: 0
   },
   quantity: {
     type: Number,
     min: 0,
     default: 0
   },
-  genres: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: 'Genre',
-      required: true
-    }
-  ]
+  genres: ['Genre']
 });
 
 const Game = mongoose.model('Game', gameSchema);
